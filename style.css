@@ -1,0 +1,80 @@
+@font-face {
+    font-family: outfit;
+    src: url(https://fonts.google.com/specimen/Outfit);
+}
+
+:root {
+    /****colors****/
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+
+    /****font****/
+    --bold:400;
+    --bolder:700;
+
+    /***typography****/
+    --paragraph:15px
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    color-scheme: light dark;
+    font-family: outfit, system-ui;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+body{
+    overflow: hidden;
+}
+
+main{
+    align-items: center;
+    background-color: var(--Light-gray);
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+}
+
+.card{
+    background-color: var(--White);
+    border-radius: 1.2rem;
+    box-shadow: 0px 15px 20px 0px #777;
+    min-width: 320px;
+    padding: 15px;
+    width: 20%;
+}
+
+.qr-code{
+    aspect-ratio: 1;
+    border-radius: .6rem;
+    width: 100%;
+}
+
+.qr-code img{
+    border-radius: inherit;
+    height: 100%;
+    object-fit: cover;
+}
+
+.head-text{
+    color: var(--Dark-blue);
+    font-size: 1.4rem;
+    font-weight: var(--bolder);
+    padding:5% 0;
+}
+
+.sub-text{
+    color: var(--Grayish-blue);
+    font-size: var(--paragraph);
+    font-weight: var(--bold);
+    padding: 2% 5% 6% 5%;
+}
